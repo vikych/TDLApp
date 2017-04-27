@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetailsActivity">
+
+    <CheckBox
+        android:id="@+id/element_description_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/description_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/element_description_check"
+        android:layout_toLeftOf="@+id/share_btn"
+        android:layout_toRightOf="@id/element_description_check"
+        android:layout_toStartOf="@+id/share_btn"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description_checked_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description_title_text"
+        android:layout_toLeftOf="@id/share_btn"
+        android:layout_toStartOf="@id/share_btn"
+        android:paddingTop="30dp" />
+
+    <ImageButton
+        android:id="@+id/share_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/button_share"
+        android:src="@drawable/share"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp" />
+
+    <TextView
+        android:id="@+id/items_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description_checked_date"
+        android:layout_toLeftOf="@id/share_btn"
+        android:layout_toStartOf="@id/share_btn"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/items_count_uncompleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/items_count"
+        android:layout_toLeftOf="@id/share_btn"
+        android:layout_toStartOf="@id/share_btn"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/camera_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/share_btn"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/photo_here"
+        android:contentDescription="@string/image_from_camera"/>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/description"
+        android:layout_below="@id/items_count_uncompleted"
+        />
+
+    <Button
+        android:id="@+id/save_description_btn"
+        android:text="@string/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="93dp"
+        android:layout_marginStart="93dp"
+        android:layout_below="@id/description"
+        />
+
+    <Button
+        android:id="@+id/edit_description_btn"
+        android:text="@string/button_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/description"
+        android:layout_toRightOf="@id/save_description_btn"
+        android:layout_toEndOf="@id/save_description_btn"
+        />
+
+</RelativeLayout>

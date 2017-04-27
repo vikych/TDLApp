@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Preferences">
+
+        <com.tsi.android.tdlapp.preference.ColorPreference
+            android:defaultValue="0"
+            android:title="Select Color"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>
